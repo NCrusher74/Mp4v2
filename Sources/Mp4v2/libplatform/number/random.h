@@ -4,7 +4,7 @@
 namespace mp4v2 { namespace platform { namespace number {
 
 ///////////////////////////////////////////////////////////////////////////////
-
+// ***chapterrelatedfile***
 /// Generate 32-bit pseudo-random number.
 MP4V2_EXPORT uint32_t random32();
 

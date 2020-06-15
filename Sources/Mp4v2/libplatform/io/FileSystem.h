@@ -4,7 +4,7 @@
 namespace mp4v2 { namespace platform { namespace io {
 
 ///////////////////////////////////////////////////////////////////////////////
-///
+///// ***chapterrelatedfile***
 /// General file-system abstraction.
 ///
 /// FileSystem abstracts operations on files and directories.
