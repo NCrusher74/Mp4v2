@@ -4,7 +4,7 @@
 namespace mp4v2 { namespace platform { namespace process {
 
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 int32_t
 getpid()
 {

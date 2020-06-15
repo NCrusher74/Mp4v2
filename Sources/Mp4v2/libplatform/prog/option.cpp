@@ -5,7 +5,7 @@
 //      $FreeBSD: src/lib/libc/stdlib/getopt_long.c,v 1.15 2006/09/23 14:48:31 ache Exp $
 //
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 /*
  * Copyright (c) 2002 Todd C. Miller <Todd.Miller@courtesan.com>
  *

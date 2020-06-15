@@ -20,7 +20,7 @@
 //      Kona Blend, kona8lend@@gmail.com
 //
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 #include "libutil/impl.h"
 
 namespace mp4v2 { namespace util {

@@ -1,4 +1,4 @@
-// ***chapterrelatedfile***
+
 /* libplatform/config.h.  Generated from config.h.in by configure.  */
 /* libplatform/config.h.in.  Generated from configure.ac by autoheader.  */
 

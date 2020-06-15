@@ -1,4 +1,4 @@
-// ***chapterrelatedfile***
+
 #include "libplatform/impl.h"
 #include <sys/timeb.h>
 

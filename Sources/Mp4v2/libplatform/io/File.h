@@ -4,7 +4,7 @@
 namespace mp4v2 { namespace platform { namespace io {
 
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 class MP4V2_EXPORT FileProvider
 {
 public:

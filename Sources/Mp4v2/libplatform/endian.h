@@ -2,7 +2,7 @@
 #define MP4V2_PLATFORM_ENDIAN_H
 
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 #define MP4V2_BYTESWAP_16(x) \
     mp4v2::platform::uint16_t( ((mp4v2::platform::uint16_t(x) & 0xff00U) >> 8) \
                              | ((mp4v2::platform::uint16_t(x) & 0x00ffU) << 8) )

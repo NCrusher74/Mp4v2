@@ -6,7 +6,7 @@
 #include "src/src.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 /// @namespace mp4v2::util (private) Command-line utility support.
 /// <b>WARNING: THIS IS A PRIVATE NAMESPACE. NOT FOR PUBLIC CONSUMPTION.</b>
 ///

@@ -3,7 +3,7 @@
 namespace mp4v2 { namespace impl {
 
 ///////////////////////////////////////////////////////////////////////////////
-// ***chapterrelatedfile***
+
 bool
 LessIgnoreCase::operator()( const string& xstr, const string& ystr ) const
 {
