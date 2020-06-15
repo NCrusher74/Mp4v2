@@ -22,6 +22,7 @@ let package = Package(
             path: "Sources/Mp4v2",
             cxxSettings: [
                 .headerSearchPath(""),
+                .headerSearchPath("include"),
                 .headerSearchPath("include/mp4v2"),
                 .headerSearchPath("libutil"),
                 .headerSearchPath("libplatform"),
