@@ -2,7 +2,7 @@
 #define MP4V2_CHAPTER_H
 
 /**************************************************************************//**
- * ***chapterrelatedfile***
+ * 
  *  @defgroup mp4_chapter MP4v2 Chapter
  *  @{
  *
