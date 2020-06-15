@@ -11,16 +11,33 @@ let package = Package(
             name: "Mp4v2",
             targets: ["Mp4v2"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+    //    dependencies: [
+    //        // Dependencies declare other packages that this package depends on.
+    //        // .package(url: /* package url */, from: "1.0.0"),
+    //    ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Mp4v2",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources/Mp4v2",
+            cxxSettings: [
+                .headerSearchPath(""),
+                .headerSearchPath("include/mp4v2"),
+                .headerSearchPath("libutil"),
+                .headerSearchPath("libplatform"),
+                .headerSearchPath("libplatform/impl.h.gch"),
+                .headerSearchPath("libplatform/io"),
+                .headerSearchPath("libplatform/number"),
+                .headerSearchPath("libplatform/process"),
+                .headerSearchPath("libplatform/prog"),
+                .headerSearchPath("libplatform/sys"),
+                .headerSearchPath("libplatform/time"),
+                .headerSearchPath("src"),
+                .headerSearchPath("src/bmff"),
+                .headerSearchPath("src/itmf"),
+                .headerSearchPath("src/qtff"),
+                .headerSearchPath("util")
+        ]),
         .testTarget(
             name: "Mp4v2Tests",
             dependencies: ["Mp4v2"]),
