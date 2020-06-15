@@ -25,7 +25,6 @@ let package = Package(
                 .headerSearchPath("include/mp4v2"),
                 .headerSearchPath("libutil"),
                 .headerSearchPath("libplatform"),
-                .headerSearchPath("libplatform/impl.h.gch"),
                 .headerSearchPath("libplatform/io"),
                 .headerSearchPath("libplatform/number"),
                 .headerSearchPath("libplatform/process"),
