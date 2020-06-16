@@ -10,12 +10,29 @@ let package = Package(
   targets: [
     .target(
       name: "CMP4v2",
+      dependencies: ["CPlatform"],
       path: "",
       sources: ["src"],
       publicHeadersPath: "include",
       cSettings: [
         .headerSearchPath(""),
         .headerSearchPath("build")
+      ]
+    ),
+    .target(
+      name: "CPlatform",
+      path: "",
+      exclude: [
+        "libplatform/io/File_win32.cpp",
+        "libplatform/io/FileSystem_win32.cpp",
+        "libplatform/number/random_win32.cpp",
+        "libplatform/process/process_win32.cpp",
+        "libplatform/time/time_win32.cpp"
+      ],
+      sources: ["libplatform"],
+      cSettings: [
+        .headerSearchPath(""),
+        .headerSearchPath("build"),
       ]
     ),
     .target(
