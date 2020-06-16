@@ -10,11 +10,12 @@ let package = Package(
   targets: [
     .target(
       name: "CMP4v2",
-      path: "src",
+      path: "",
+      sources: ["src"],
+      publicHeadersPath: "include",
       cSettings: [
-        .headerSearchPath(".."),
-        .headerSearchPath("../build"),
-        .headerSearchPath("../include")
+        .headerSearchPath(""),
+        .headerSearchPath("build")
       ]
     )
   ]
