@@ -8,6 +8,14 @@ let package = Package(
     .library(name: "MP4v2", targets: ["CMP4v2"])
   ],
   targets: [
-    .target(name: "CMP4v2")
+    .target(
+      name: "CMP4v2",
+      path: "src",
+      cSettings: [
+        .headerSearchPath(".."),
+        .headerSearchPath("../build"),
+        .headerSearchPath("../include")
+      ]
+    )
   ]
 )
