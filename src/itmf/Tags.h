@@ -43,21 +43,50 @@ public:
     static const string CODE_COMMENTS;
     static const string CODE_GENRE;
     static const string CODE_GENRETYPE;
+    static const string CODE_RECORDINGDATE;
     static const string CODE_RELEASEDATE;
     static const string CODE_TRACK;
     static const string CODE_DISK;
     static const string CODE_TEMPO;
     static const string CODE_COMPILATION;
 
+    static const string CODE_SUBTITLE;
+    static const string CODE_TRACKSUBTITLE;
+
+    static const string CODE_ARRANGER;
+    static const string CODE_ARTDIRECTOR;
+    static const string CODE_CONDUCTOR;
+    static const string CODE_DIRECTOR;
+    static const string CODE_EXECPRODUCER;
+    static const string CODE_LYRICIST;
+    static const string CODE_NARRATOR;
+    static const string CODE_ORIGINALARTIST;
+    static const string CODE_PERFORMER;
+    static const string CODE_PRODUCER;
+    static const string CODE_SOLOIST;
+    static const string CODE_SOUNDENGINEER;
+    
     static const string CODE_TVSHOW;
     static const string CODE_TVNETWORK;
     static const string CODE_TVEPISODEID;
     static const string CODE_TVSEASON;
     static const string CODE_TVEPISODE;
+    static const string CODE_MOVEMENTNAME;
+    static const string CODE_MOVEMENTNUMBER;
+    static const string CODE_MOVEMENTCOUNT;
+    static const string CODE_WORK;
 
     static const string CODE_DESCRIPTION;
+    static const string CODE_SONGDESCRIPTION;
+    static const string CODE_TVSHOWDESCRIPTION;
+    static const string CODE_LINERNOTES;
     static const string CODE_LONGDESCRIPTION;
     static const string CODE_LYRICS;
+
+    static const string CODE_ACKNOWLEDGMENT;
+    static const string CODE_THANKS;
+    static const string CODE_SOURCECREDIT;
+    static const string CODE_ONLINEEXTRAS;
 
     static const string CODE_SORTNAME;
     static const string CODE_SORTARTIST;
@@ -70,8 +99,14 @@ public:
     static const string CODE_ENCODINGTOOL;   
     static const string CODE_ENCODEDBY;
     static const string CODE_PURCHASEDATE;
+    static const string CODE_PHONOGRAMRIGHTS;
+    static const string CODE_PUBLISHER;
+    static const string CODE_LABEL;
+    static const string CODE_YEAR;
 
     static const string CODE_PODCAST;
+    static const string CODE_PODCASTID;
+    static const string CODE_PODCASTURL;
     static const string CODE_KEYWORDS;
     static const string CODE_CATEGORY;
 
@@ -79,6 +114,7 @@ public:
     static const string CODE_MEDIATYPE;
     static const string CODE_CONTENTRATING;
     static const string CODE_GAPLESS;
+    static const string CODE_ISRC;
 
     static const string CODE_ITUNESACCOUNT;
     static const string CODE_ITUNESACCOUNTTYPE;

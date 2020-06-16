@@ -149,46 +149,77 @@ MP4StandardAtom::MP4StandardAtom (MP4File &file, const char *type) : MP4Atom(fil
     } else if (ATOMID(type) == ATOMID("ilst")) {
         ExpectChildAtom("\251nam", Optional, OnlyOne); /* name */
         ExpectChildAtom("\251ART", Optional, OnlyOne); /* artist */
-        ExpectChildAtom("\251wrt", Optional, OnlyOne); /* writer */
+        ExpectChildAtom("aART", Optional, OnlyOne); /* album artist */
         ExpectChildAtom("\251alb", Optional, OnlyOne); /* album */
-        ExpectChildAtom("\251day", Optional, OnlyOne); /* date */
-        ExpectChildAtom("\251too", Optional, OnlyOne); /* tool */
+        ExpectChildAtom("\251grp", Optional, OnlyOne); /* Grouping */
+        ExpectChildAtom("\251wrt", Optional, OnlyOne); /* composer */
         ExpectChildAtom("\251cmt", Optional, OnlyOne); /* comment */
+        ExpectChildAtom("gnre", Optional, OnlyOne); /* genre (ID3v1 index + 1) */
         ExpectChildAtom("\251gen", Optional, OnlyOne); /* custom genre */
+        ExpectChildAtom("\251day", Optional, OnlyOne); /* recording date */
+        ExpectChildAtom("rldt", Optional, OnlyOne); /* release date */
         ExpectChildAtom("trkn", Optional, OnlyOne); /* tracknumber */
         ExpectChildAtom("disk", Optional, OnlyOne); /* disknumber */
-        ExpectChildAtom("gnre", Optional, OnlyOne); /* genre (ID3v1 index + 1) */
         ExpectChildAtom("cpil", Optional, OnlyOne); /* compilation */
         ExpectChildAtom("tmpo", Optional, OnlyOne); /* BPM */
-        ExpectChildAtom("covr", Optional, OnlyOne); /* cover art */
-        ExpectChildAtom("aART", Optional, OnlyOne); /* album artist */
-        ExpectChildAtom("----", Optional, Many); /* ---- free form */
-        ExpectChildAtom("pgap", Optional, OnlyOne); /* part of gapless album */
+        ExpectChildAtom("\251snm", Optional, OnlyOne); /* subtitle */
+        ExpectChildAtom("\251st3", Optional, OnlyOne); /* track subtitle */
+        ExpectChildAtom("\251arg", Optional, OnlyOne); /* arranger */
+        ExpectChildAtom("\251ard", Optional, OnlyOne); /* art director */
+        ExpectChildAtom("\251con", Optional, OnlyOne); /* conductor */
+        ExpectChildAtom("\251dir", Optional, OnlyOne); /* director */
+        ExpectChildAtom("\251xpd", Optional, OnlyOne); /* executive producer */
+        ExpectChildAtom("\251aut", Optional, OnlyOne); /* lyricist */
+        ExpectChildAtom("\251nrt", Optional, OnlyOne); /* narrator */
+        ExpectChildAtom("\251ope", Optional, OnlyOne); /* original artist */
+        ExpectChildAtom("\251prf", Optional, OnlyOne); /* performer */
+        ExpectChildAtom("\251prd", Optional, OnlyOne); /* producer */
+        ExpectChildAtom("\251sol", Optional, OnlyOne); /* soloist */
+        ExpectChildAtom("\251sne", Optional, OnlyOne); /* sound engineer */
         ExpectChildAtom("tvsh", Optional, OnlyOne); /* TV show */
         ExpectChildAtom("tvsn", Optional, OnlyOne); /* TV season */
         ExpectChildAtom("tven", Optional, OnlyOne); /* TV episode number */
         ExpectChildAtom("tvnn", Optional, OnlyOne); /* TV network name */
-        ExpectChildAtom("tves", Optional, OnlyOne); /* TV epsidoe */
+        ExpectChildAtom("tves", Optional, OnlyOne); /* TV episode */
+        ExpectChildAtom("\251mvn", Optional, OnlyOne); /* movement name */
+        ExpectChildAtom("\251mvi", Optional, OnlyOne); /* movement number */
+        ExpectChildAtom("\251mvc", Optional, OnlyOne); /* movement count */
+        ExpectChildAtom("\251wrk", Optional, OnlyOne); /* work name */
         ExpectChildAtom("desc", Optional, OnlyOne); /* description */
         ExpectChildAtom("ldes", Optional, OnlyOne); /* long description */
+        ExpectChildAtom("\251des", Optional, OnlyOne); /* song description */
+        ExpectChildAtom("sdes", Optional, OnlyOne); /* tv show description */
+        ExpectChildAtom("\251lnt", Optional, OnlyOne); /* liner notes */
+        ExpectChildAtom("\251lyr", Optional, OnlyOne); /* Lyrics */
+        ExpectChildAtom("\251cak", Optional, OnlyOne); /* acknowledgment */
+        ExpectChildAtom("\251thx", Optional, OnlyOne); /* thanks */
+        ExpectChildAtom("\251url", Optional, OnlyOne); /* online extras */
+        ExpectChildAtom("\251src", Optional, OnlyOne); /* source credit */
         ExpectChildAtom("soal", Optional, OnlyOne); /* sort album */
         ExpectChildAtom("soar", Optional, OnlyOne); /* sort artist */
         ExpectChildAtom("soaa", Optional, OnlyOne); /* sort album artist */
         ExpectChildAtom("sonm", Optional, OnlyOne); /* sort name */
         ExpectChildAtom("soco", Optional, OnlyOne); /* sort composer */
         ExpectChildAtom("sosn", Optional, OnlyOne); /* sort show */
-        ExpectChildAtom("hdvd", Optional, OnlyOne); /* HD video */
-        ExpectChildAtom("©enc", Optional, OnlyOne); /* Encoded by */
+        ExpectChildAtom("cprt", Optional, OnlyOne); /* Copyright */
+        ExpectChildAtom("\251enc", Optional, OnlyOne); /* Encoded by */
+        ExpectChildAtom("\251too", Optional, OnlyOne); /* tool */
+        ExpectChildAtom("purd", Optional, OnlyOne); /* purchase date */
+        ExpectChildAtom("\251phg", Optional, OnlyOne); /* phonogram rights */
+        ExpectChildAtom("\251pub", Optional, OnlyOne); /* publisher */
+        ExpectChildAtom("\251mak", Optional, OnlyOne); /* label */
+        ExpectChildAtom("yrrc", Optional, OnlyOne); /* year */
+        ExpectChildAtom("\251too", Optional, OnlyOne); /* tool */
         ExpectChildAtom("pcst", Optional, OnlyOne); /* Podcast flag */
         ExpectChildAtom("keyw", Optional, OnlyOne); /* Keywords (for podcasts?) */
         ExpectChildAtom("catg", Optional, OnlyOne); /* Category (for podcasts?) */
         ExpectChildAtom("purl", Optional, OnlyOne); /* Podcast URL */
         ExpectChildAtom("egid", Optional, OnlyOne); /* Podcast episode global unique ID */
-        ExpectChildAtom("rtng", Optional, OnlyOne); /* Content Rating */
+        ExpectChildAtom("hdvd", Optional, OnlyOne); /* HD video */
         ExpectChildAtom("stik", Optional, OnlyOne); /* MediaType */
-        ExpectChildAtom("\251grp", Optional, OnlyOne); /* Grouping */
-        ExpectChildAtom("\251lyr", Optional, OnlyOne); /* Lyrics */
-        ExpectChildAtom("cprt", Optional, OnlyOne); /* Copyright */
+        ExpectChildAtom("rtng", Optional, OnlyOne); /* Content Rating */
+        ExpectChildAtom("pgap", Optional, OnlyOne); /* part of gapless album */
+        ExpectChildAtom("\251isr", Optional, OnlyOne); /* ISRC */
         ExpectChildAtom("apID", Optional, OnlyOne); /* iTunes Account */
         ExpectChildAtom("akID", Optional, OnlyOne); /* iTunes Account Type */
         ExpectChildAtom("sfID", Optional, OnlyOne); /* iTunes Country */
@@ -198,6 +229,8 @@ MP4StandardAtom::MP4StandardAtom (MP4File &file, const char *type) : MP4Atom(fil
         ExpectChildAtom("geID", Optional, OnlyOne); /* Genre ID */
         ExpectChildAtom("cmID", Optional, OnlyOne); /* Composer ID */
         ExpectChildAtom("xid ", Optional, OnlyOne); /* XID */
+        ExpectChildAtom("covr", Optional, OnlyOne); /* cover art */
+        ExpectChildAtom("----", Optional, Many); /* ---- free form */
 
     }  else if (ATOMID(type) == ATOMID("imif")) {
         AddVersionAndFlags();

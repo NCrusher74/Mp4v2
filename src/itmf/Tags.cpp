@@ -845,21 +845,50 @@ const string Tags::CODE_COMPOSER          = "\xa9" "wrt";
 const string Tags::CODE_COMMENTS          = "\xa9" "cmt";
 const string Tags::CODE_GENRE             = "\xa9" "gen";
 const string Tags::CODE_GENRETYPE         = "gnre";
-const string Tags::CODE_RELEASEDATE       = "\xa9" "day";
+const string Tags::CODE_RECORDINGDATE     = "\xa9" "day";
+const string Tags::CODE_RELEASEDATE       = "rldt";
 const string Tags::CODE_TRACK             = "trkn";
 const string Tags::CODE_DISK              = "disk";
 const string Tags::CODE_TEMPO             = "tmpo";
 const string Tags::CODE_COMPILATION       = "cpil";
+
+const string Tags::CODE_SUBTITLE          = "\xa9" "snm";
+const string Tags::CODE_TRACKSUBTITLE     = "\xa9" "st3";
+
+const string Tags::CODE_ARRANGER          = "\xa9" "arg";
+const string Tags::CODE_ARTDIRECTOR       = "\xa9" "ard";
+const string Tags::CODE_CONDUCTOR         = "\xa9" "con";
+const string Tags::CODE_DIRECTOR          = "\xa9" "dir";
+const string Tags::CODE_EXECPRODUCER      = "\xa9" "xpd";
+const string Tags::CODE_LYRICIST          = "\xa9" "aut";
+const string Tags::CODE_NARRATOR          = "\xa9" "nrt";
+const string Tags::CODE_ORIGINALARTIST    = "\xa9" "ope";
+const string Tags::CODE_PERFORMER         = "\xa9" "prf";
+const string Tags::CODE_PRODUCER          = "\xa9" "prd";
+const string Tags::CODE_SOLOIST           = "\xa9" "sol";
+const string Tags::CODE_SOUNDENGINEER     = "\xa9" "sne";
 
 const string Tags::CODE_TVSHOW            = "tvsh";
 const string Tags::CODE_TVNETWORK         = "tvnn";
 const string Tags::CODE_TVEPISODEID       = "tven";
 const string Tags::CODE_TVSEASON          = "tvsn";
 const string Tags::CODE_TVEPISODE         = "tves";
+const string Tags::CODE_MOVEMENTNAME      = "\xa9" "mvn";
+const string Tags::CODE_MOVEMENTNUMBER    = "\xa9" "mvi";
+const string Tags::CODE_MOVEMENTCOUNT     = "\xa9" "mvc";
+const string Tags::CODE_WORK              = "\xa9" "wrk";
 
 const string Tags::CODE_DESCRIPTION       = "desc";
+const string Tags::CODE_SONGDESCRIPTION   = "\xa9" "des";
+const string Tags::CODE_TVSHOWDESCRIPTION = "sdes";
+const string Tags::CODE_LINERNOTES        = "\xa9" "lnt";
 const string Tags::CODE_LONGDESCRIPTION   = "ldes";
 const string Tags::CODE_LYRICS            = "\xa9" "lyr";
+
+const string Tags::CODE_ACKNOWLEDGMENT    = "\xa9" "cak";
+const string Tags::CODE_THANKS            = "\xa9" "thx";
+const string Tags::CODE_SOURCECREDIT      = "\xa9" "src";
+const string Tags::CODE_ONLINEEXTRAS      = "\xa9" "url";
 
 const string Tags::CODE_SORTNAME          = "sonm";
 const string Tags::CODE_SORTARTIST        = "soar";
@@ -872,8 +901,14 @@ const string Tags::CODE_COPYRIGHT         = "cprt";
 const string Tags::CODE_ENCODINGTOOL      = "\xa9" "too";
 const string Tags::CODE_ENCODEDBY         = "\xa9" "enc";
 const string Tags::CODE_PURCHASEDATE      = "purd";
+const string Tags::CODE_PHONOGRAMRIGHTS   = "\xa9" "phg";
+const string Tags::CODE_PUBLISHER         = "\xa9" "pub";
+const string Tags::CODE_LABEL             = "\xa9" "mak";
+const string Tags::CODE_YEAR              = "\xa9" "yrrc";
 
 const string Tags::CODE_PODCAST           = "pcst";
+const string Tags::CODE_PODCASTID         = "egid";
+const string Tags::CODE_PODCASTURL        = "purl";
 const string Tags::CODE_KEYWORDS          = "keyw";
 const string Tags::CODE_CATEGORY          = "catg";
 
@@ -881,6 +916,7 @@ const string Tags::CODE_HDVIDEO           = "hdvd";
 const string Tags::CODE_MEDIATYPE         = "stik";
 const string Tags::CODE_CONTENTRATING     = "rtng";
 const string Tags::CODE_GAPLESS           = "pgap";
+const string Tags::CODE_ISRC              = "\xa9" "isr";
 
 const string Tags::CODE_ITUNESACCOUNT     = "apID";
 const string Tags::CODE_ITUNESACCOUNTTYPE = "akID";
