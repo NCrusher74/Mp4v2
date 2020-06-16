@@ -1,0 +1,4 @@
+module CMP4v2 {
+  header "mp4v2/mp4v2.h"
+  export *
+}

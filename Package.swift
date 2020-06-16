@@ -17,6 +17,10 @@ let package = Package(
         .headerSearchPath(""),
         .headerSearchPath("build")
       ]
+    ),
+    .target(
+      name: "MP4v2Example",
+      dependencies: ["CMP4v2"]
     )
   ]
 )
