@@ -1,3 +1,5 @@
+A Swift Package Manager version of MP4v2. There is no wrapper, the API is in C.
+
 All docs are located in doc/ subdirectory. Useful starting points:
 
 Release Notes           -- doc/ReleaseNotes.txt
